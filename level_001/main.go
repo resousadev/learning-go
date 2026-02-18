@@ -4,7 +4,8 @@ import "fmt"
 
 type meu_tipo int
 
-var x meu_tipo
+var x int
+var y meu_tipo
 
 func main() {
 
@@ -15,5 +16,11 @@ func main() {
 	x = 42
 
 	fmt.Printf("O valor de x é: %v\n", x)
+
+	y = meu_tipo(x)
+
+	fmt.Printf("O valor de y é: %v\n", y)
+
+	fmt.Printf("O tipo de y é: %T\n", y)
 
 }
