@@ -2,17 +2,25 @@ package main
 
 import "fmt"
 
+type meu_tipo int
+
+var x int
+var y meu_tipo
+
 func main() {
 
-	x := 42
-	y := "James Bond"
-	z := true
+	fmt.Println(x)
 
-	// %d para numeros de base 10, %s para strings e %t para booleanos
-	fmt.Printf("Os valores de x, y e z são respectivamente: %d, %s e %t\n", x, y, z)
+	fmt.Printf("O tipo de x é: %T\n", x)
 
-	fmt.Println("O valor de x é:", x)
-	fmt.Println("O valor de y é:", y)
-	fmt.Println("O valor de z é:", z)
+	x = 42
+
+	fmt.Printf("O valor de x é: %v\n", x)
+
+	y = meu_tipo(x)
+
+	fmt.Printf("O valor de y é: %v\n", y)
+
+	fmt.Printf("O tipo de y é: %T\n", y)
 
 }
