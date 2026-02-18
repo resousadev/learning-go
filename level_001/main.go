@@ -2,18 +2,18 @@ package main
 
 import "fmt"
 
-var x int
-var y string
-var z bool
+type meu_tipo int
+
+var x meu_tipo
 
 func main() {
 
-	x = 42
-	y = "Go is awesome!"
-	z = true
+	fmt.Println(x)
 
-	// Aqui estamos atribuindo todos os valores a uma string formatada usando Sprintf
-	s := fmt.Sprintf("%d %s %t", x, y, z)
-	fmt.Println(s)
+	fmt.Printf("O tipo de x é: %T\n", x)
+
+	x = 42
+
+	fmt.Printf("O valor de x é: %v\n", x)
 
 }
