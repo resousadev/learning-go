@@ -2,17 +2,15 @@ package main
 
 import "fmt"
 
+var x int
+var y string
+var z bool
+
 func main() {
 
-	x := 42
-	y := "James Bond"
-	z := true
-
-	// %d para numeros de base 10, %s para strings e %t para booleanos
-	fmt.Printf("Os valores de x, y e z são respectivamente: %d, %s e %t\n", x, y, z)
-
-	fmt.Println("O valor de x é:", x)
-	fmt.Println("O valor de y é:", y)
-	fmt.Println("O valor de z é:", z)
+	// Aqui será exibido o valor zero de cada variável, pois elas não foram inicializadas
+	fmt.Printf("O valor de x é: %#v\n", x)
+	fmt.Printf("O valor de y é: %#v\n", y)
+	fmt.Printf("O valor de z é: %#v\n", z)
 
 }
